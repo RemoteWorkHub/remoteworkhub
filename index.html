@@ -1,29 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RemoteWorkHub - Find Remote Jobs</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>RemoteWorkHub</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="jobs.html">Jobs</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <h2>Find Your Next Remote Job</h2>
-      <p>Discover the best opportunities to work from anywhere.</p>
-      <a class="button" href="jobs.html">Browse Jobs</a>
-    </section>
-  </main>
-  <footer>
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9fafc;
+  color: #333;
+}
+
+header {
+  background: #2d89ef;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #2d89ef;
+  margin-top: 30px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Job Listings */
+.job-listing {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+}
+
+.job-listing h3 {
+  margin-top: 0;
+  color: #222;
+}
+
+/* Forms */
+form {
+  margin-top: 15px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+form input[type="file"] {
+  border: none;
+}
+
+form button {
+  background: #2d89ef;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background: #1a5fb4;
+}
+
+/* Featured Jobs List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #fff;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    font-size: 16px;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
     <p>© 2025 RemoteWorkHub. All rights reserved.</p>
   </footer>
 </body>
